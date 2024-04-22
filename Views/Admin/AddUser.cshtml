@@ -1,0 +1,168 @@
+﻿@model BlueGrassDigital.Models.Admin.PersonDetails
+
+<!-- Preloader -->
+<div id="preloader" class="" style="display: none;">
+    <div id="ctn-preloader" class="ctn-preloader">
+        <div class="round_spinner">
+            <div class="spinner"></div>
+            <div class="text">
+                <img src="img/logo/Logo-2.png" alt="">
+            </div>
+        </div>
+        <h2 class="head">Did You Know?</h2>
+        <p>We design Banca for the readers, optimizing not for page views or engagement</p>
+    </div>
+</div>
+    <section class="breadcrumb-area">
+        <div class="breadcrumb-widget  pt-200 pb-110" style="background-image: url(img/breadcrumb/bg-1.png);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="breadcrumb-content pt-85">
+                            <h1>Add User Details</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section class="loan-deatils-area bg_disable pt-130 pb-120">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="loan-details-widget">
+                    <form id="userDetailsForm" asp-controller="Admin" asp-action="PersonDetails" method="post">
+                            <div class="row mb-35 gy-4">
+                                <!-- New fields for capturing person details -->
+                                <div class="col-md-6">
+                                    <label class="label" for="personFirstName">First Name</label>
+                                    <div class="input-field">
+                                    <input type="text" class="form-control" id="personFirstName" name="FirstName" required>
+                                    <span asp-validation-for="FirstName" class="text-danger"></span>
+                                    </div>
+                                    
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="label" for="personLastName">Last Name</label>
+                                <input type="text" class="form-control" id="personLastName" name="LastName" required>
+                                <span asp-validation-for="LastName" class="text-danger"></span>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <label class="label" for="personAddressCountry">Country</label>
+                                <input type="text" class="form-control" id="personAddressCountry" name="AddressCountry" required autocomplete="off">
+                                <span asp-validation-for="AddressCountry" class="text-danger"></span>
+                                <div id="countrySuggestions"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="label" for="personAddressCity">City</label>
+                                <input type="text" class="form-control" id="personAddressCity" name="AddressCity" required autocomplete="off">
+                                <span asp-validation-for="AddressCity" class="text-danger"></span>
+                                <div id="citySuggestions"></div>
+                                </div>
+
+
+                                <div class="col-md-6">
+                                    <label class="label" for="personMobileNumber">Mobile Number</label>
+                                <input type="number" class="form-control" id="personMobileNumber" name="MobileNumber" required>
+                                <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="label" for="personEmail">Email</label>
+                                <input type="email" class="form-control" id="personEmail" name="Email" required>
+                                <span asp-validation-for="Email" class="text-danger"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="label" for="personGender">Gender</label>
+                                <select class="form-select" id="personGender" name="Gender" required>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                <span asp-validation-for="Gender" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row  mt-60">
+                                <div class="col-md-12">
+                                    <div class="nav-btn d-flex justify-content-end">
+                                    <button class="theme-btn-primary_alt theme-btn next-btn" type="submit">Submit <i class="arrow_right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<script>
+
+    $(document).ready(function () {
+       
+        // // Function to fetch country suggestions
+        // $('#personAddressCountry').keyup(function () {
+         
+        //     var query = $(this).val();
+        //     if (query.length >= 3) {
+        //         $.ajax({
+        //             url: 'https://fidelityservicesgroup.simplify.hr/Lookup/ProvinceAutoCompleteLookup',
+        //             type: 'POST',
+        //             crossDomain: true,
+        //             dataType: 'json',
+        //             data: {
+        //                 countryId: 1,
+        //                 term: query
+        //             },
+        //             success: function (data) {
+        //                 debugger;
+        //                 var suggestions = data.geonames.map(function (place) {
+        //                     return place.name;
+        //                 });
+        //                 $('#countrySuggestions').html(suggestions.join(', '));
+                      
+        //             }
+        //         }).done(function (data) {
+
+        //             debugger;
+
+        //         });;
+        //     } else {
+        //         $('#countrySuggestions').html('');
+        //     }
+        // });
+
+        // // Function to fetch city suggestions
+        // $('#personAddressCity').keyup(function () {
+        //     var query = $(this).val();
+        //     if (query.length >= 3) {
+        //         $.ajax({
+        //             url: 'https://api.opencagedata.com/geocode/v1/json',
+        //             type: 'GET',
+        //             dataType: 'json',
+        //             data: {
+        //                 q: query,
+        //                 country: 'ZA', // South Africa country code
+        //                 maxRows: 5, // Maximum number of suggestions
+        //                 username: 'demo' // Your Geonames username
+        //             },
+        //             success: function (data) {
+        //                 var suggestions = data.geonames.map(function (place) {
+        //                     return place.name;
+        //                 });
+        //                 $('#citySuggestions').html(suggestions.join(', '));
+        //             }
+        //         });
+        //     } else {
+        //         $('#citySuggestions').html('');
+        //     }
+        // });
+   
+    });
+</script>
+

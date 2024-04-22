@@ -1,0 +1,160 @@
+﻿@model List<BlueGrassDigital.Models.Person.PersonResponse>
+
+@if (Model != null && Model.Any())
+{
+    <section class="feature-jobs bg_white pt-125 pb-140">
+
+        <!-- Preloader -->
+        <div id="preloader" class="" style="display: none;">
+            <div id="ctn-preloader" class="ctn-preloader">
+                <div class="round_spinner">
+                    <div class="spinner"></div>
+                    <div class="text">
+                        <img src="img/logo/Logo-2.png" alt="">
+                    </div>
+                </div>
+                <h2 class="head">Did You Know?</h2>
+                <p>We design Banca for the readers, optimizing not for page views or engagement</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="section-title text-start">
+                        <h2 class="mb-0 wow fadeInRight" style="visibility: visible; animation-name: fadeInRight;">Customers</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row pt-60">
+                <div class="col-lg-12">
+                    <div class="feature-job-tab">
+                        <ul class="feature-job-list">
+                            @foreach (var person in Model)
+                            {
+                                <li style="cursor: pointer;">
+                                    <a onclick="showPopup('@person.FirstName', '@person.LastName', '@person.AddressCity', '@person.AddressCountry', '@person.MobileNumber', '@person.Email', '@person.Gender', '@person._id.Oid');">
+                                        <div class="single-feature-job wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                            <h6 class="job-title">@person.FirstName @person.LastName</h6>
+                                            <div class="d-flex flex-wrap">
+                                                <div class="job-location me-3">
+                                                    <i class="icon_pin_alt"></i>@person.AddressCity, @person.AddressCountry
+                                                </div>
+                                                <div class="job-catagory">
+                                                    <span>@person.MobileNumber</span> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup/Modal -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close popup-close" onclick="closePopup()">&times;</span>
+                <h2 id="popupTitle" class="popup-title"></h2>
+                <div id="popupDetails" class="popup-details"></div>
+            </div>
+        </div>
+
+
+        <!-- Popup/Modal -->
+        <div id="popupUpdated" class="popup">
+            <div class="popup-content">
+                <span onclick="closePopupUpdated()" class="close popup-close">&times;</span>
+                <h2 style="color: black;" class="popup-title"> Your info has been updated</h2>
+            </div>
+        </div>
+    </section>
+    }
+
+<script>
+    function showPopup(firstName, lastName, addressCity, addressCountry, mobileNumber, email, gender, id) {
+        var popup = document.getElementById("popup");
+        var popupTitle = document.getElementById("popupTitle");
+        var popupDetails = document.getElementById("popupDetails");
+
+        // Set popup title
+        popupTitle.textContent = "Edit Details";
+
+        // Set popup details with input fields for editing
+        popupDetails.innerHTML = `
+                <input type="hidden" id="originalId" value="${id}">
+                <label for="editFirstName">First Name:</label>
+                <input type="text" id="editFirstName" value="${firstName}">
+                <label for="editLastName">Last Name:</label>
+                <input type="text" id="editLastName" value="${lastName}">
+                <label for="editAddressCity">City:</label>
+                <input type="text" id="editAddressCity" value="${addressCity}">
+                <label for="editAddressCountry">Country:</label>
+                <input type="text" id="editAddressCountry" value="${addressCountry}">
+                <label for="editMobileNumber">Mobile Number:</label>
+                <input type="text" id="editMobileNumber" value="${mobileNumber}">
+                <label for="editEmail">Email:</label>
+                <input type="text" id="editEmail" value="${email}">
+                <label for="editGender">Gender:</label>
+                <input type="text" id="editGender" value="${gender}">
+                <button type="button" onclick="submitEdit()" class="btn btn-primary">Submit</button>
+            `;
+
+        // Show the popup
+        popup.style.display = "block";
+    }
+
+    function submitEdit() {
+        var originalId = document.getElementById("originalId").value;
+        var editedData = {
+            todo_id: originalId,
+            id: null,
+            FirstName: document.getElementById("editFirstName").value,
+            LastName: document.getElementById("editLastName").value,
+            AddressCity: document.getElementById("editAddressCity").value,
+            AddressCountry: document.getElementById("editAddressCountry").value,
+            ProfilePicture: "https://example.com/profiles/johndoe.jpg",
+            MobileNumber: document.getElementById("editMobileNumber").value,
+            Email: document.getElementById("editEmail").value,
+            Gender: document.getElementById("editGender").value
+        };
+        $("#preloader").show();
+        $.ajax({
+            url: 'https://localhost:44370/Admin/Edit_Person',
+            type: 'POST', // Use 'PUT' for the HTTP method
+            dataType: "json",
+            contentType: 'application/json',
+            data: JSON.stringify(editedData)
+        }).done(function (response) {
+            // Handle success response
+            console.log('Success:', response);
+            $("#preloader").hide();
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+            var popup = document.getElementById("popupUpdated");
+            popup.style.display = "block";
+
+
+        }).fail(function (jqXHR, textStatus, errorThrown) {
+            // Handle error response
+            console.error('Error:', textStatus, errorThrown);
+        });
+
+        // Close the popup
+        closePopup();
+    }
+
+    function closePopup() {
+        var popup = document.getElementById("popup");
+        popup.style.display = "none";
+    }
+
+    function closePopupUpdated() {
+        var popup = document.getElementById("popupUpdated");
+        popup.style.display = "none";
+    }
+</script>

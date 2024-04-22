@@ -1,0 +1,208 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\home\\_personview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\home\\_personview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\admin\\_adminpersonview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\admin\\_adminpersonview.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\admin\\edituser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\logic\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:logic\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\shared\\_navbar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\admin\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\admin\\adduser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\views\\admin\\persondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:views\\admin\\persondetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|c:\\users\\owner\\source\\repos\\bluegrassdigital\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA41D4AB-4EC5-4D6F-8284-21016FB08039}|BlueGrassDigital.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T13:39:12.284Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_AdminPersonView.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\_AdminPersonView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\_AdminPersonView.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\_AdminPersonView.cshtml",
+              "RelativeToolTip": "Views\\Admin\\_AdminPersonView.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAACMAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T14:15:14.184Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_PersonView.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Home\\_PersonView.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\_PersonView.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Home\\_PersonView.cshtml",
+              "RelativeToolTip": "Views\\Home\\_PersonView.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T17:05:39.37Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Logic\\Person.cs",
+              "RelativeDocumentMoniker": "Logic\\Person.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Logic\\Person.cs",
+              "RelativeToolTip": "Logic\\Person.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwCEAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T15:58:51.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "_navbar.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Shared\\_navbar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_navbar.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Shared\\_navbar.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_navbar.cshtml",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAAAkAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T21:09:06.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\AddUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\AddUser.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\AddUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\AddUser.cshtml",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAGsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T21:08:21.78Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T21:06:45.39Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAADMvAAAAAAAAAAAgwFsvAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-21T21:05:05.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EditUser.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\EditUser.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\EditUser.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\EditUser.cshtml",
+              "RelativeToolTip": "Views\\Admin\\EditUser.cshtml",
+              "ViewState": "AQIAACoAAAAAAAAAAAAAADcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T21:01:57.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PersonDetails.cshtml",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\PersonDetails.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\PersonDetails.cshtml",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Views\\Admin\\PersonDetails.cshtml",
+              "RelativeToolTip": "Views\\Admin\\PersonDetails.cshtml",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-21T21:01:30.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\Owner\\source\\repos\\BlueGrassDigital\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Controllers\\AdminController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowCYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-21T20:59:57.923Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

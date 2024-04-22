@@ -1,0 +1,233 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<!-- Preloader -->
+<div id="preloader" class="" style="display: none;">
+    <div id="ctn-preloader" class="ctn-preloader">
+        <div class="round_spinner">
+            <div class="spinner"></div>
+            <div class="text">
+                <img src="img/logo/Logo-2.png" alt="">
+            </div>
+        </div>
+        <h2 class="head">Did You Know?</h2>
+        <p>We design Banca for the readers, optimizing not for page views or engagement</p>
+    </div>
+</div>
+
+<div class="slider-active slick-initialized slick-slider">
+    <button type="button" class="slick-prev slick-arrow" style="display: block;"><i class="ti-angle-left"></i></button>
+    <main>
+  <section class="breadcrumb-area" id="banner_animation2" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+    <div class="breadcrumb-widget breadcrumb-widget-2  pt-200 pb-145" style="background-image: url(img/banner/search.png);">
+
+        <div class="shapes">
+            <div class="one-shape shape-1" data-parallax="{&quot;x&quot;: 100, &quot;y&quot;: 0, &quot;rotateZ&quot;:0}" style="transform:translate3d(0.029px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.029px, 0px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+                <img src="img/breadcrumb/Polygon-1.png" alt="shape">
+            </div>
+            <div class="one-shape shape-2" data-parallax="{&quot;x&quot;: 200, &quot;y&quot;: 50, &quot;rotateZ&quot;:0}" style="transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); -webkit-transform:translate3d(0.029px, 0.029px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scaleX(1) scaleY(1) scaleZ(1); ">
+                <img src="img/breadcrumb/Polygon-2.png" alt="shape">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto">
+                    <div class="breadcrumb-content pt-50">
+                        <h1>Search our Directory</h1>
+                        <div class="search-box mt-20">
+                                    <form asp-action="Search" method="get">
+                                        <div class="input-group">
+                                            <input class="form-control" type="text" placeholder="Search..." id="Search" name="Search">
+                                            <button class="search-btn input-group-append" type="submit">
+                                                <svg class="svg-icon search-icon" style="width: 20px;" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title id="title">Search Icon</title><desc id="desc">A magnifying glass icon.</desc><g class="search-path" fill="none" stroke="#848F91"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" /><circle cx="8" cy="8" r="7" /></g></svg>
+                                            </button>
+                                        </div>
+                                    </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div id="SearchResult"></div>
+
+
+
+        <!-- Feature start -->
+        <section id="feature" class="steps-area pt-55 pb-140 bg-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 mx-auto  pb-55">
+                        <div class="section-title">
+                            <span class="short-title-2">Our Process</span>
+                            <h2 class="wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">3 <span class="underline-shape">Simple Steps</span> to Follow</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                Discover the easiest way to find what you need, connect effortlessly, and finalize your agreements with confidence.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row gy-xl-0 gy-4">
+                    <div class="col-xl-4 col-md-6">
+                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                            <div class="card-img">
+                                <img src="img/home-4/step-icon-01.svg" alt="Search Our Database">
+                            </div>
+                            <h4>Search Our Database</h4>
+                            <p>
+                                Explore our extensive database to find the perfect match for your needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6">
+                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                            <div class="card-img">
+                                <img src="img/home-4/step-icon-02.svg" alt="Find Your Match">
+                            </div>
+                            <h4>Find Your Match</h4>
+                            <p>
+                                Once you've found what you're looking for, connect with your perfect match effortlessly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 mx-auto">
+                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                            <div class="card-img">
+                                <img src="img/home-4/step-icon-03.svg" alt="Seal the Deal">
+                            </div>
+                            <h4>Seal the Deal</h4>
+                            <p>
+                                Finalize your agreement and enjoy a seamless experience from start to finish.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature end -->
+        <!-- Advisor start -->
+        <section class="advisor-area pt-130 pb-140 overflow-hidden" id="MouseMoveAnimation" style="position: relative; transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+            <div class="container">
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-lg-6 pr-lg-75">
+                        <div class="section-title text-start">
+                            <h2 class="mb-0 wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">Our Advisors Are Ready To Help You</h2>
+                        </div>
+
+                        <div class="advisor-img mt-45 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+
+                            <div class="shape ">
+                                <div class="box">
+                                    <img class="layer layer2" data-depth="0.5" src="img/faq/Shape.png" alt="shape" style="position: relative; display: block; left: 0px; top: 0px; transform: translate3d(-32.4754px, 15.3541px, 0px); transform-style: preserve-3d; backface-visibility: hidden;">
+                                </div>
+                                <div class="circle-shape"></div>
+                            </div>
+                            <img class="main-img" src="img/faq/advisor.png" alt="advisor">
+
+                            <div class="work-time">
+                                <div class="circle-shape"></div>
+                                All weekdays <span> 08.00 - 18.00</span>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4 gy-md-0 gy-3 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                            <div class="col-md-6">
+                                <a href="tel:0711968195" class="theme-btn theme-btn-primary_alt theme-btn-rounded d-flex align-items-center justify-content-center">
+                                    <i class="icon_phone"></i> 0711968195
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="mailto:delonjarrod1307@gmail.com" class="theme-btn theme-btn-primary_alt theme-btn-rounded d-flex align-items-center justify-content-center">
+                                    <i class="icon_mail_alt "></i> email
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-widget-2">
+                            <div class="accordion" id="accordionExample">
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                    <div class="faq-header" id="headingOne">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            How can I search for information using the database?<i class="icon_plus"></i><i class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>
+                                                You can search for information in the database by entering specific criteria such as name, surname, or any other relevant details. The search feature allows you to quickly retrieve relevant information based on your search query.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                                    <div class="faq-header" id="headingTwo">
+                                        <h6 class="mb-0" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                            What admin functionalities are available, and how do I access them?<i class="icon_plus"></i><i class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>
+                                                The admin functionalities include managing user access, updating database records, and generating reports. To access these functionalities, log in to the admin panel using your credentials. From there, you can navigate through the different sections to perform various administrative tasks.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                                    <div class="faq-header" id="headingThree">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                            Can I search for information using both name and surname?<i class="icon_plus"></i><i class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>
+                                                Yes, you can search for information using both the name and surname fields. This allows for more specific and accurate search results, helping you find the desired information more efficiently.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </div>
+
+
+<!-- jQuery code -->
+<script>
+    $(document).ready(function () {
+        $("form").submit(function (event) {
+            event.preventDefault();
+
+            var searchText = $("#Search").val();
+            $("#preloader").show();
+            $.ajax({
+                url: "/Home/Search",
+                method: "GET",
+                data: { Search: searchText },
+                success: function (data) {
+                    $("#SearchResult").html(data);
+                    $("#preloader").hide();
+                },
+                error: function (xhr, status, error) {
+                    console.error(xhr.responseText);
+                    $("#preloader").hide();
+                }
+            });
+        });
+
+
+    });
+</script>

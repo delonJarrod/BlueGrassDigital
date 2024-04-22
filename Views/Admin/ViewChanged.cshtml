@@ -1,0 +1,79 @@
+﻿@model List<BlueGrassDigital.Models.Admin.ChangedModel>
+<section class="breadcrumb-area">
+    <div style="background-color: #0050b2;" class="breadcrumb-widget  pt-110 pb-110" style="background-image: url(img/breadcrumb/bg-1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="breadcrumb-content pt-85">
+                        <h1>View Changed deatails</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pt-200 pb-145 bg_disable">
+    <div class="container pt-40">
+
+        <div class="row gy-4 mt-30">
+            @{
+                var count = 1;
+                foreach (var item in Model)
+                {
+                    if (item.Changed != null && item.ChangedProperties != null && item.Original != null)
+                    {
+                        <div class="col-md-6 col-lg-4"> 
+                        <div class="feature-card-widget-7 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                <h4>Original #@count </h4>
+                            <div class="row">
+                                <div class="col col-12">
+                                        <p> <Lable>FirstName: @item.Original.FirstName</Lable></p>
+                                        <p> <Lable>LastName: @item.Original.LastName</Lable></p>
+                                        <p> <Lable>Email: @item.Original.Email</Lable></p>
+                                        <p> <Lable>MobileNumber: @item.Original.MobileNumber</Lable></p>
+                                        <p> <Lable>Location: @item.Original.AddressCountry</Lable>  <label>@item.Original.AddressCity </label></p>
+                                        <p> <Lable>Gender: @item.Original.Gender</Lable></p>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-card-widget-7 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                <h4>Changed #@count </h4>
+                            <div class="row">
+                                <div class="col col-12">
+                                        <p> <Lable>FirstName: @item.Changed.FirstName</Lable></p>
+                                        <p> <Lable>LastName: @item.Changed.LastName</Lable></p>
+                                        <p> <Lable>Email: @item.Changed.Email</Lable></p>
+                                        <p> <Lable>MobileNumber: @item.Changed.MobileNumber</Lable></p>
+                                    <p> <Lable>Location: @item.Changed.AddressCountry</Lable>  <label>@item.Changed.AddressCity </label></p>
+                                        <p> <Lable>Gender: @item.Changed.Gender</Lable></p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-card-widget-7 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                                <h4>What has Changed #@count </h4>
+                                <div class="row">
+                                    <div class="col col-12">
+                                        @foreach (var x in item.ChangedProperties)
+                                        {
+                                            <p>
+                                                @x has changed
+                                            </p>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                    }
+                    count++;
+                }
+            }
+    </div>
+    </div>
+</section>
